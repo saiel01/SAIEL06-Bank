@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+      /* body{
+    background-image: url(img/bank1.jpg_fit=scale);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+img{
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+footer{
+            position: absolute;
+            left: 35%;
+            bottom: 0%;
+            color: #b0acac !important;
+        }
+        
+.btn:hover {opacity: 1}
+.btn{
+  opacity: 0.6;
+}
+          .panel{
+            width:220px;
+          }
+#p1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    padding-top: 50px;
+    padding-left: 20px;
+    color: black;
+    background-color: beige;
+    width: 400px;
+    height: 240px;
+    border-radius: 70px;
+    
+    
+}
+#pa{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.container { 
+    height: 200px;
+    position: relative;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .center button{
+    color: black;
+    background-color: white;
+  }
+  .center button:hover{
+    color: white;
+    background-color: black;
+  }
+a:hover{
+    color: darkgray;
+}
+    </style>
+</head>
+<body>
+        <img src="img/bank1.jpg_fit=scale">
+        <nav class="navbar navbar-inverse" style="padding-top: 2px;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Spark Bank</a>
+              </div>
+              <ul class="nav navbar-nav  navbar-right">
+                <li class="active"><a href="home1.html">Home</a></li>
+                <li><a href="createuser.php">Users</a></li>
+                <li><a href="transfermoney.php">Transfer Money</a></li>
+                <li><a href="transactionhistory.php">Transaction History</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div id="p1">
+            <p>WELCOME TO <br>
+               SPARKS BANK<br></p>
+          </div>
+
+         
+         
+          <div class="container">
+            <div class="center">
+          <a data-toggle="popover"  type="button" data-html="true" href="#" ><button class="btn btn-primary">Get Started</button></a>
+        </div>
+      </div>
+
+      <div id="popover-content" class="hide">
+        
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="createuser.php">Users</a></div>
+              
+            </div>
+        
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="transfermoney.php">Transfer Money</a></div>
+             
+            </div>
+        
+           
+            <div class="panel panel-default">
+              <div class="panel-heading"><a href="transactionhistory.php">Transaction History</a></div>
+             
+            </div>
+          </div>
+        
+        
+      </div>
+
+<footer class="text-center mt-5 " id="footer">
+  <p>&copy 2021. Made by <b>Saiel Gaonkar,Nitte Meenakshi Institue Of Technology</b> <br>Sparks Foundation 2021</p>
+</footer>
+
+<script>
+  $("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+});
+</script>
+</body>
+</html>
